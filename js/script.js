@@ -14,6 +14,8 @@ $(document).ready(function() {
         $up.toggleClass('upvisible', $(this).scrollTop() > $nav.height());
     });
     
+    $(".container .mobilenav").hide();
+    
     $(".container .projects .project:first-of-type").click(function() {
         window.open("http://fuckan.mario.skola-zabok.avalon.hr/stranice/zoo/index.html");
     });
