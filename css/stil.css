@@ -1,0 +1,691 @@
+@font-face {
+    font-family: "MontserratRegular";
+    src: url("../fonts/Montserrat.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::selection {
+    color: white;
+    background-color: #141414;
+}
+
+.blacklinks {
+    transition: 0.5s;
+    color: #141414 !important;
+}
+
+.blacklogo {
+    transition: 0.5s;
+    background-image: url("../images/mflogoblack.png") !important;
+}
+
+.whitenav {
+    z-index: 1;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+html, body, .container {
+    width: 100%;
+    height: 100%;
+    font-family: "MontserratRegular";
+    scroll-behavior: smooth;
+}
+
+.container nav {
+    z-index: 2;
+    transition: 0.5s;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+.container nav > a {
+    transition: 0.5s;
+    top: 5px;
+    position: absolute;
+    margin-left: 100px;
+    padding: 30px;
+    background-image: url("../images/mflogo.png");
+    background-size: cover;
+}
+
+.container nav .innernav {
+    text-align: right;
+    width: 95%;
+    margin: auto;
+    padding: 25px;
+}
+
+.container nav .innernav a {
+    transition: 0.5s;
+    color: white;
+    margin: 0px 30px;
+    text-transform: uppercase;
+    font-size: 23px;
+    text-decoration: none;
+    font-family: "Karla";
+    display: inline-block;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.container nav .innernav a:hover {
+    color: silver;
+}
+
+.blacklinks:hover {
+    color: #FED93C !important;
+}
+
+.container header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    background-image: url("../images/headerbackground.jpg");
+}
+
+.container header .anchor {
+    position: absolute;
+    text-align: center;
+    bottom: 90px;
+    display: block;
+    width: 100%;
+}
+
+.container header .anchor .anchorlink {
+    position: absolute;
+    padding: 30px 40px;
+    background-image: url("../images/downarrow.png");
+    background-size: cover;
+    animation-name: anchor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes anchor {
+    0% {
+        transform: translateY(0px);
+    }
+    
+    25% {
+        transform: translateY(10px);
+    }
+    
+    50% {
+        transform: translateY(0px);
+    }
+    
+    75% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.container header .image {
+   width: 50%;
+}
+
+.container header .image img {
+    max-width: 100%;
+}
+
+.container header .text {
+    flex-direction: column;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    text-align: left;
+    width: 50%;
+}
+
+.container header .text h1 {
+    text-shadow: 0px 0px 10px grey;
+    color: white;
+    font-size: 75px;
+}
+
+.container header .text h1 span {
+    cursor: pointer;
+    color: #141414;
+}
+
+.container .skills {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 40%;
+}
+
+.container .skills .skill {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.container .skills .skill:first-of-type, .container .skills .skill:nth-of-type(3) {
+    background-color: #f9f9f9;
+}
+
+.container .skills .skill:nth-of-type(2), .container .skills .skill:last-of-type {
+    background-color: #FED93C;
+}
+
+.container .skills .skill:first-of-type:hover, .container .skills .skill:nth-of-type(2):hover, .container .skills .skill:nth-of-type(3):hover, .container .skills .skill:last-of-type:hover {
+    z-index: 1;
+    box-shadow: 0px 0px 15px silver;
+}
+
+.container .skills .skill img {
+    display: block;
+    margin: 0px auto 20px auto;
+    max-width: 100px;
+    transition: 0.5s;
+}
+
+.container .skills .skill:first-of-type:hover img, .container .skills .skill:nth-of-type(2):hover img, .container .skills .skill:nth-of-type(3):hover img, .container .skills .skill:last-of-type:hover img {
+    transform: translateY(-15px);
+}
+
+.container .skills .skill h2 {
+    margin: 0px auto 20px auto;
+}
+
+.container .skills .skill p {
+    color: #565656;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    width: 80%;
+    font-size: 17px;
+}
+
+.container .projectstitle {
+    background-image: url("../images/backgroundimage.png");
+    background-repeat: repeat-x;
+    padding: 80px 40px 40px 40px;
+}
+
+.container .projectstitle h1 {
+    font-family: "Montserrat";
+    font-size: 50px;
+    color: #141414;
+}
+
+.container .projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container .projects .project {
+    cursor: pointer;
+    margin: 60px 0px;
+    box-shadow: 0px 0px 20px silver;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 454px;
+    background-size: cover;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.container .projects .project:first-of-type {
+    background-image: url("../images/zoocolored.png");
+}
+
+.container .projects .project:first-of-type:hover {
+    background-image: url("../images/zoonotcolored.png");
+}
+
+.container .projects .project:nth-of-type(2) {
+    background-image: url("../images/ubisoftcolored.png");
+}
+
+.container .projects .project:nth-of-type(2):hover {
+    background-image: url("../images/ubisoftnotcolored.png");
+}
+
+.container .projects .project:nth-of-type(3) {
+    background-image: url("../images/geazycolored.png");
+}
+
+.container .projects .project:nth-of-type(3):hover {
+    background-image: url("../images/geazynotcolored.png");
+}
+
+.container .projects .project:last-of-type {
+    background-image: url("../images/christmascolored.png");
+}
+
+.container .projects .project:last-of-type:hover {
+    background-image: url("../images/christmasnotcolored.png");
+}
+
+.container .counter {
+    padding: 80px 0px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container .counter .counterbox {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .counter .counterbox h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.container .counter .counterbox h3 {
+    font-size: 18px;
+    color: #969696;
+}
+
+.container .contact {
+    display: flex;
+    padding: 100px 40px 0px 40px;
+    background-image: url("../images/contactimage.jpg");
+    background-size: cover;
+}
+
+.container .contact h1 {
+    margin-bottom: 13px;
+    font-size: 50px;
+    font-family: "Montserrat";
+}
+
+.container .contact p {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.container .contact form {
+    width: 100%;
+}
+
+.container .contact form input, .container .contact form textarea {
+    margin: 30px 0px;
+    font-family: "MontserratRegular";
+    font-size: 23px;
+    width: 100%;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid #000;
+    color: black;
+}
+
+.container .contact form input[type="submit"] {
+    color: white;
+    background-color: #141414;
+    border: 2px solid #141414;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: auto;
+    padding: 20px 40px;
+    font-size: 14px;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.container .contact form input[type="submit"]:hover {
+    background-color: transparent;
+    color: #141414;
+}
+
+.container .contact form textarea {
+    resize: none;
+}
+
+.container .contact form input:focus, .container .contact form textarea:focus {
+    outline: none;
+}
+
+.container .contact form input::placeholder, .container .contact form textarea::placeholder {
+    color: black;
+}
+
+.container .contact .form {
+    width: 50%;
+}
+
+.container .contact .contactimage {
+    width: 50%;
+    background-image: url("../images/me2.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.container footer {
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 70px 40px;
+    background-image: url("../images/footerbackground.png");
+    background-size: cover;
+}
+
+.container footer .footerpart {
+    width: 33%;
+}
+
+.container footer .footerpart:first-of-type {
+    width: 30%;
+}
+
+.container footer .footerpart:nth-of-type(2), .container footer .footerpart:last-of-type {
+    text-align: center;
+}
+
+.container footer .footerpart img {
+    max-width: 150px;
+}
+
+.container footer .footerpart h1 {
+    margin-bottom: 27px;
+    color: white;
+}
+
+.container footer .footerpart p {
+    line-height: 40px;
+    width: 50%;
+    word-wrap: break-word;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.container footer .footerpart:first-of-type p {
+    margin-bottom: 40px;
+}
+
+.container footer .footerpart ul {
+    list-style: none;
+    color: white;
+}
+
+.container footer .footerpart ul li {
+    padding-left: 20px;
+    margin: 20px auto;
+    width: 20%;
+    text-align: left;
+    background-image: url("../images/dot.png");
+    background-repeat: no-repeat;
+    background-position: 0%;
+}
+
+.container footer .footerpart ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container footer .footerpart:last-of-type p {
+    margin: auto;
+}
+
+.container footer .footerpart .social {
+    width: 50%;
+}
+
+.container footer .footerpart .social a {
+    margin: 0px 10px 0px 0px;
+}
+
+.container footer .footerpart .social a:first-of-type:hover i, a:last-of-type:hover i {
+    color: white;
+    background-color: #ffda2a;
+}
+
+a i {
+    border-radius: 50%;
+    padding: 17px 20px;
+    background-color: white;
+    font-size: 14px;
+    color: #141414;
+    transition: 0.5s;
+}
+
+a:last-of-type i {
+    padding: 17px 17px;
+}
+
+.container .fa-arrow-up {
+    font-size: 50px;
+    padding: 10px 13px;
+    display: none;
+    cursor: pointer;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    background-color: #FED93C;
+    box-shadow: 0px 0px 20px #141414;
+    z-index: 2;
+}
+
+.upvisible {
+    display: block !important;
+}
+
+.container .mobilenav {
+    display: none;
+    position: fixed;
+    top: 90px;
+    left: 20px;
+    width: 60%;
+    background-color: #FED93C;
+    box-shadow: 0px 0px 20px #141414;
+    z-index: 2;
+}
+
+.container .mobilenav a {
+    color: black;
+    font-family: "MontserratRegular";
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 40px 0px;
+}
+
+.container .menu {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    top: 20px;
+    left: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #FED93C;
+    box-shadow: 0px 0px 20px #141414;
+}
+
+.container .menu .line1 {
+    width: 70%;
+    height: 8px;
+    background-color: #141414;
+    margin-bottom: 7px;
+    transition: 0.5s;
+}
+
+.container .menu .line2 {
+    width: 70%;
+    height: 8px;
+    background-color: #141414;
+    transition: 0.5s;
+}
+
+.line1anim {
+    transform: translateY(5px) rotate(45deg);
+}
+
+.line2anim {
+    transform: translateY(-8.5px) rotate(-45deg);
+}
+
+@media screen and (max-width: 1440px) {
+    .container .contact .form form input, .container .contact .form form textarea {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container nav .innernav a {
+        font-size: 20px;
+    }
+    
+    .container header .text h1 {
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container nav {
+        display: none;
+    }
+    
+    .container header .image {
+        display: none;
+    }
+    
+    .container header .text {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .container header .anchor {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .container .skills {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .container .skills .skill {
+        width: 100%;
+        padding: 50px 0px;
+    }
+    
+    .container .projectstitle h1 {
+        font-size: 25px;
+    }
+    
+    .container .projects {
+        flex-direction: column;
+    }
+    
+    .container .projects .project {
+        margin: 30px 0px;
+        width: 90%;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .container .projects .project:last-of-type {
+        margin-bottom: 40px;
+    }
+    
+    .container .counter .counterbox h1 {
+        font-size: 20px;
+    }
+    
+    .container .counter .counterbox h3 {
+        font-size: 10px;
+    }
+    
+    .container .contact .form {
+        width: 100%;
+    }
+    
+    .container .contact .form form input[type="submit"] {
+        display: block;
+        margin: 20px auto;
+    }
+    
+    .container .contact .contactimage {
+        display: none;
+    }
+    
+    .container footer {
+        flex-direction: column;
+    }
+    
+    .container footer .footerpart {
+        width: 100%;
+        margin: 0px 0px 40px 0px;
+    }
+    
+    .container footer .footerpart:first-of-type {
+        width: 100%;
+    }
+    
+    .container footer .footerpart img {
+        width: 20%;
+    }
+    
+    .container footer .footerpart p {
+        text-align: left;
+        font-size: 16px;
+        width: 100%;
+    }
+    
+    .container footer .footerpart h1 {
+        font-size: 20px;
+        text-align: left;
+    }
+    
+    .container footer .footerpart ul {
+        width: 0%;
+    }
+    
+    .container .menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container .skills .skill img {
+        width: 80px;
+    }
+    
+    .container .fa-arrow-up {
+        font-size: 35px;
+    }
+}

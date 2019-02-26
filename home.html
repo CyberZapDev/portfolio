@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <link href="css/stil.css" type="text/css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:900" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <a href="#home"><i class="fas fa-arrow-up"></i></a>
+            <nav>
+                <a href="home.html"></a>
+                <div class="innernav">
+                    <a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+                </div>
+            </nav>
+            <div class="menu">
+                <div class="line1">
+                </div>
+                <div class="line2">
+                </div>
+            </div>
+            <div class="mobilenav">
+                <a href="#home">Home</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+            </div>
+            <header id="home">
+                <div class="image">
+                    <img src="images/me1.png" alt="Me">
+                </div>
+                <div class="text">
+                    <h1>Hello <span onclick="namechange();"></span>,</h1>
+                    <h1>I am a</h1>
+                    <h1>Website</h1>
+                    <h1>Designer</h1>
+                </div>
+                <div class="anchor">
+                    <a class="anchorlink" href="#projects"></a>
+                </div>
+            </header>
+            <div id="skills" class="skills">
+                <div class="skill">
+                    <img src="images/html.png" alt="HTML">
+                    <h2>HTML</h2>
+                    <p>HTML is used to format the skeleton of a website.</p>
+                </div>
+                <div class="skill">
+                    <img src="images/css.png" alt="CSS">
+                    <h2>CSS</h2>
+                    <p>Cascading style sheets are used to format the layout of Web pages.</p>
+                </div>
+                <div class="skill">
+                    <img src="images/js.png" alt="JS">
+                    <h2>JS</h2>
+                    <p>JavaScript is used for creating interactive web applications.</p>
+                </div>
+                <div class="skill">
+                    <img src="images/php.png" alt="PHP">
+                    <h2>PHP</h2>
+                    <p>PHP is used for dealing with user input and databases.</p>
+                </div>
+            </div>
+            <div id="projects" class="projectstitle">
+                <h1>Some of my projects</h1>
+            </div>
+            <div class="projects">
+                <div class="project" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0"> 
+                </div>
+                <div class="project" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
+                </div>
+                <div class="project" data-aos="fade-up" data-aos-duration="600" data-aos-delay="0">
+                </div>
+                <div class="project" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">  
+                </div>
+            </div>
+            <div class="counter">
+                <div class="counterbox">
+                    <h1 class='numscroller' data-min='1' data-max='40' data-delay='0' data-increment='1'></h1>
+                    <h3>Web Pages</h3>
+                </div>
+                <div class="counterbox">
+                    <h1 class='numscroller' data-min='1' data-max='22518' data-delay='0' data-increment='10'></h1>
+                    <h3>Lines of Code</h3>
+                </div>
+                <div class="counterbox">
+                    <h1 class='numscroller' data-min='1' data-max='4' data-delay='0' data-increment='1'></h1>
+                    <h3>Projects</h3>
+                </div>
+                <div class="counterbox">
+                    <h1 class='numscroller' data-min='1' data-max='10' data-delay='0' data-increment='1'></h1>
+                    <h3>Break Times</h3>
+                </div>
+            </div>
+            <div id="contact" class="contact">
+                <div class="form">
+                    <h1>Contact Me</h1>
+                    <p>Have a idea for a website? Let's talk about it.</p>
+                    <form action="mailto:mario.fuckan@skole.hr" method="POST">
+                        <input name="Name" type="text" placeholder="FULL NAME" required>
+                        <input name="Email" type="email" placeholder="FULL EMAIL" required>
+                        <input name="Phone" type="tel" placeholder="FULL PHONE" required>
+                        <textarea cols="40" rows="10" name="Message" placeholder="YOUR MESSAGE" required></textarea>
+                        <input type="submit" name="Submit" value="Send a message">
+                    </form>
+                </div>
+                <div class="contactimage">
+                </div>
+            </div>
+            <footer>
+                <div class="footerpart">
+                    <img src="images/mflogo.png" alt="Logo">
+                    <p>Ready for challenges and learning new technologies. You can also find me on social media.</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/mario.cr.568" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/kurisurria/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footerpart">
+                    <h1>Quick links</h1>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footerpart">
+                    <h1>New Business</h1>
+                    <p>Want to manage your business online? I'm available for hiring.</p>
+                </div>
+            </footer>
+        </div>
+        <script src="js/name.js"></script>
+        <script src="js/counter.js"></script>
+        <script src="js/aos.js"></script>
+    </body>
+</html>

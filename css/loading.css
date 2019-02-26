@@ -1,0 +1,177 @@
+@keyframes cursor {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    
+    100% {
+        transform: translateX(-300px) translateY(-530px);
+    }
+}
+
+::selection {
+    background-color: white;
+    color: #141414;
+}
+
+* {
+    margin: 0px;
+}
+
+html, body, .container {
+    width: 100%;
+    height: 100%;
+    background-color: #1d1f21;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.container h1, .code {
+    font-size: 35px;
+    font-family: monospace;
+    color: white;
+}
+
+.prvi {
+    color: #b77fdb;
+}
+
+.drugi {
+    color: #6c9ef8;
+}
+
+.treci {
+    color: #d8932b;
+}
+
+.code {
+    color: white;
+}
+
+h1:first-of-type {
+    text-indent: 5%;
+}
+
+h1:nth-of-type(2) {
+    text-indent: 10%;
+}
+
+h1:nth-of-type(3) {
+    text-indent: 15%;
+}
+
+h1:nth-of-type(4) {
+    text-indent: 10%;
+}
+
+h1:last-of-type {
+    text-indent: 5%;
+}
+
+.container a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    right: 10%;
+    font-size: 30px;
+    font-family: "Karla";
+    text-align: center;
+    width: 15%;
+    padding: 40px 0px;
+    display: inline-block;
+    background-color: #85a300;
+}
+
+.cursor {
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    animation-name: cursor;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 1440px) {
+    .cursor {
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    animation-name: cursorbiglaptop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+}
+
+@keyframes cursorbiglaptop {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    
+    100% {
+        transform: translateX(-230px) translateY(-500px);
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .cursor {
+    position: absolute;
+    bottom: -100px;
+    right: 0px;
+    animation-name: cursorsmalllaptop;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+}
+
+@keyframes cursorsmalllaptop {
+    0% {
+        transform: translateX(0px) translateY(0px);
+    }
+    
+    100% {
+        transform: translateX(-200px) translateY(-450px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container, img {
+        display: none;
+    }
+    
+    .mobilecontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .mobilecontainer h1 {
+        line-height: 40px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        font-family: monospace;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mobilecontainer h1 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
