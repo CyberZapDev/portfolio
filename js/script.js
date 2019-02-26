@@ -37,13 +37,13 @@ $(document).ready(function() {
     });
     
     $(".container .mobilenav a").click(function() {
-        $(".container .mobilenav").slideToggle(500);
+        $(".container .mobilenav").hide(500);
         $(".container .menu .line1").toggleClass("line1anim");
         $(".container .menu .line2").toggleClass("line2anim");
     });
     
     $(".container .fa-arrow-up").click(function() {
-        $(".container .mobilenav").slideToggle(500);
+        $(".container .mobilenav").hide(500);
         $(".container .menu .line1").toggleClass("line1anim");
         $(".container .menu .line2").toggleClass("line2anim");
     });
